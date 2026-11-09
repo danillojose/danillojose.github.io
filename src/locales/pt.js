@@ -55,8 +55,8 @@ export default {
   },
   contact: {
     label: 'Contato',
-    title: 'Vamos criar algo que se mova?',
-    text: 'Projetos, vagas ou só uma conversa sobre animação na web.',
+    title: 'Vamos criar algo memorável?',
+    text: 'Projetos, vagas ou só uma boa conversa sobre front-end, UX e interfaces que fazem sentido para quem usa.',
     cta: 'Ver meu GitHub',
     email: 'Enviar e-mail',
     rights: 'Feito com Vue.js e GSAP.',
