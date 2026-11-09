@@ -1,0 +1,107 @@
+{
+  "fetchedAt": "2026-11-09T14:26:27.435Z",
+  "user": {
+    "name": "Danillo José",
+    "avatar": "https://avatars.githubusercontent.com/u/16737360?v=4",
+    "location": "Brazil",
+    "createdAt": "2016-01-16T20:33:18Z",
+    "url": "https://github.com/danillojose"
+  },
+  "repos": [
+    {
+      "name": "DARPA",
+      "description": "Entendido por Dispenser Automático de Remédios para pacientes com Alzheimer, ou apenas Dispenser de remédios, o DARPA, desenvolvido em Arduino com linguagem C, surgiu de um projeto da disciplina de sistemas embarcados no primeiro semestre de 2018. ",
+      "url": "https://github.com/danillojose/DARPA",
+      "homepage": null,
+      "language": "C++",
+      "languages": [
+        "C++"
+      ],
+      "stars": 2,
+      "createdAt": "2018-07-06T21:15:01Z",
+      "pushedAt": "2018-07-07T16:37:04Z"
+    },
+    {
+      "name": "RenomearPDF_IBGE",
+      "description": "O projeto tem como objetivo renomear uma lista de mapas em PDF que foram escaneados. O software abre cada PDF, identifica o número do setor ao qual ele pertence e renomeia o respectivo arquivo.",
+      "url": "https://github.com/danillojose/RenomearPDF_IBGE",
+      "homepage": null,
+      "language": "Python",
+      "languages": [
+        "Python"
+      ],
+      "stars": 0,
+      "createdAt": "2023-06-29T18:34:58Z",
+      "pushedAt": "2023-06-29T20:07:34Z"
+    },
+    {
+      "name": "prova-pratica-SERPRO-2023",
+      "description": "Respostas para as três questões da prova prática do órgão SERPRO 2023.",
+      "url": "https://github.com/danillojose/prova-pratica-SERPRO-2023",
+      "homepage": null,
+      "language": "Java",
+      "languages": [
+        "Java",
+        "Python",
+        "JavaScript"
+      ],
+      "stars": 0,
+      "createdAt": "2023-09-25T17:57:33Z",
+      "pushedAt": "2023-09-25T18:17:04Z"
+    },
+    {
+      "name": "javascript-estudos-SERPRO",
+      "description": "Este repositório possui implementações em JavaScript para o estudo da prova prática de 2023 do órgão SERPRO (Serviço Federal de Processamento de Dados).",
+      "url": "https://github.com/danillojose/javascript-estudos-SERPRO",
+      "homepage": null,
+      "language": "JavaScript",
+      "languages": [
+        "JavaScript",
+        "HTML"
+      ],
+      "stars": 0,
+      "createdAt": "2023-08-26T17:28:23Z",
+      "pushedAt": "2023-08-26T17:35:34Z"
+    },
+    {
+      "name": "java-estudos-SERPRO",
+      "description": "Este repositório possui uma série de implementações em Java para o estudo da prova prática de 2023 do órgão SERPRO (Serviço Federal de Processamento de Dados).",
+      "url": "https://github.com/danillojose/java-estudos-SERPRO",
+      "homepage": null,
+      "language": "Java",
+      "languages": [
+        "Java"
+      ],
+      "stars": 0,
+      "createdAt": "2023-08-22T16:23:01Z",
+      "pushedAt": "2023-08-26T21:27:40Z"
+    },
+    {
+      "name": "APA-algoritmos",
+      "description": "Diretório que contém as implementações pedidas no decorrer da disciplina de Análise e Projeto de Algoritmos.",
+      "url": "https://github.com/danillojose/APA-algoritmos",
+      "homepage": null,
+      "language": "Java",
+      "languages": [
+        "Java",
+        "Makefile"
+      ],
+      "stars": 0,
+      "createdAt": "2018-12-03T22:15:18Z",
+      "pushedAt": "2019-05-07T23:45:13Z"
+    },
+    {
+      "name": "RSF-Projeto-final",
+      "description": "No projeto deve ser implementado as camadas física, de enlace e de redes de uma rede sem fio Ad-Hoc.",
+      "url": "https://github.com/danillojose/RSF-Projeto-final",
+      "homepage": null,
+      "language": "Java",
+      "languages": [
+        "Java"
+      ],
+      "stars": 0,
+      "createdAt": "2018-10-30T14:54:17Z",
+      "pushedAt": "2018-11-02T14:04:03Z"
+    }
+  ]
+}

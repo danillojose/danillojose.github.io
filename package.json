@@ -1,0 +1,26 @@
+{
+  "name": "danillojose-portfolio",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "fetch:github": "node scripts/fetch-github.js",
+    "dev": "vite",
+    "prebuild": "node scripts/fetch-github.js",
+    "build": "vite build && node scripts/spa-fallback.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "gsap": "^3.15.1",
+    "lenis": "^1.3.27",
+    "ogl": "^1.0.11",
+    "vue": "^3.5.45",
+    "vue-i18n": "^11.4.18",
+    "vue-router": "^5.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.10",
+    "vite": "^8.3.7",
+    "vite-plugin-vue-devtools": "^8.2.1"
+  }
+}
