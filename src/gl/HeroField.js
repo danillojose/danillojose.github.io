@@ -82,6 +82,9 @@ export class HeroField {
   constructor(container, { colorA = '#8d8a83', colorB = '#c6ff3d' } = {}) {
     this.container = container
     this.mouse = { x: 0, y: 0, tx: 0, ty: 0 }
+    // Telas touch não têm cursor: a bolha passeia sozinha, devagar e sem padrão repetitivo.
+    this.touch = window.matchMedia('(pointer: coarse)').matches
+    this.phase = Array.from({ length: 4 }, () => Math.random() * Math.PI * 2)
     this.renderer = new Renderer({ dpr: Math.min(window.devicePixelRatio, 2), alpha: true, antialias: false })
     const gl = (this.gl = this.renderer.gl)
     gl.clearColor(0, 0, 0, 0)
@@ -123,7 +126,7 @@ export class HeroField {
       this.mouse.ty = -((e.clientY / window.innerHeight) * 2 - 1)
     }
     window.addEventListener('resize', this.onResize)
-    window.addEventListener('pointermove', this.onMove)
+    if (!this.touch) window.addEventListener('pointermove', this.onMove)
     this.resize()
   }
 
@@ -145,6 +148,12 @@ export class HeroField {
   }
 
   render(time) {
+    if (this.touch) {
+      // Soma de senoides lentas com frequências que não se alinham: trajetória orgânica e aleatória.
+      const [a, b, c, d] = this.phase
+      this.mouse.tx = Math.sin(time * 0.13 + a) * 0.45 + Math.sin(time * 0.071 + b) * 0.25
+      this.mouse.ty = Math.sin(time * 0.097 + c) * 0.4 + Math.sin(time * 0.053 + d) * 0.25
+    }
     this.mouse.x += (this.mouse.tx - this.mouse.x) * 0.06
     this.mouse.y += (this.mouse.ty - this.mouse.y) * 0.06
     this.program.uniforms.uMouse.value = [this.mouse.x, this.mouse.y]

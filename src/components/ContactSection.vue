@@ -36,10 +36,11 @@ useGsapContext(root, () => {
       <div class="contact__actions contact__fade">
         <a v-if="profile.email" :href="`mailto:${profile.email}`" class="contact__email" :data-cursor="t('cursor.open')">{{ profile.email }}</a>
         <a :href="profile.github" target="_blank" rel="noopener" class="btn btn--accent" v-magnetic="0.4" :data-cursor="t('cursor.open')">
-          <span data-magnetic-inner>{{ t('contact.cta') }} ↗</span>
+          <!-- &#xFE0E; força a seta como texto: sem ele, celulares a exibem como emoji. -->
+          <span data-magnetic-inner>{{ t('contact.cta') }} &#x2197;&#xFE0E;</span>
         </a>
         <a v-if="profile.linkedin" :href="profile.linkedin" target="_blank" rel="noopener" class="btn" v-magnetic="0.4">
-          <span data-magnetic-inner>LinkedIn ↗</span>
+          <span data-magnetic-inner>LinkedIn &#x2197;&#xFE0E;</span>
         </a>
       </div>
 
